@@ -5,15 +5,17 @@ function App() {
   let [addCount , setAddCount] = useState(0);
   // let counter = 15;
   const addValue = () => {
-    addCount = addCount < 20 ? addCount + 1 : 'reach limit';
-    setAddCount(addCount);
-    console.log('added click' , addCount)
-  }
+    const newValue = addCount +1;
+    setAddCount(newValue);
+    console.log('added click', newValue);
+  };
+  
   const removeValue = () => {
-    setAddCount(addCount > 0 ? addCount - 1 : 'reach end');
-    console.log('removed click' , addCount)
-    
-  }
+    const newValue = addCount -1;
+    setAddCount(newValue);
+    console.log('removed click', newValue);
+  };
+  
 
 
   // ========
