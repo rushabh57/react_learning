@@ -11,7 +11,7 @@ function App() {
   };
   
   const removeValue = () => {
-    const newValue = addCount -1;
+    const newValue = addCount -1 ? addCount == 0 : addCount = 0;
     setAddCount(newValue);
     console.log('removed click', newValue);
   };
